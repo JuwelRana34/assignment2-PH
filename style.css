@@ -66,6 +66,7 @@ header{
 }
 
 /* hero section  */
+
 .hero-main-container{
     width: 80%;
     margin: 0 auto;
@@ -78,7 +79,7 @@ header{
     margin-top: 3rem;
 }
 .hero-left h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: var(--text-color);
 }
 .hero-left p{
@@ -90,13 +91,13 @@ header{
     font-family: "Dancing Script", cursive;
 }
 .join-btn{
-    padding: 1rem 1.5rem ;
+    padding: 0.5rem 1.5rem ;
     border-radius: 40px;
     border: none;
     margin: 1rem;
     background-color: var(--button-color);
     color: var(--text-color);
-    font-size: larger;
+    font-size: medium;
 }
 .app-btn{
     padding: 1rem 1.5rem ;
@@ -105,7 +106,7 @@ header{
     margin: 1rem;
     background: transparent;
     color: var(--text-color);
-    font-size: larger;
+    font-size: medium;
 }
 
 
@@ -165,6 +166,7 @@ header{
 main{
     background-color: #000000;
     color: var(--text-color);
+    padding: 3rem 0;
 }
 main p{
    
@@ -175,12 +177,17 @@ main p{
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 1.5rem;
+    padding: 3rem 0;
     
     
 }
 .your-habibt-header p{
    margin: 1rem;
+    
+}
+.your-habibt-header h1, .team-header h1{
+   font-size: 40px;
+   margin: 1rem 0;
     
 }
 
@@ -268,7 +275,7 @@ main p{
 .BMI-Calculator-header{
     width: 50%;
     margin:0 auto;
-    padding: 1.5rem 0;
+    padding: 3rem 0;
 }
 .BMI-Calculator-header h1{
     font-size: 40px;
@@ -358,7 +365,7 @@ th,td{
 .team-main-container{
     width: 80%;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 3rem 0;
 }
 .team-header{
     width: 50%;
@@ -386,8 +393,8 @@ th,td{
 }
 
 .ours-team-members div img{
-   width: 330px;
-   height: 280px;
+   width: 100%;
+   height: 100%;
    border-radius: 10px;
 }
 .grid-text{
@@ -398,14 +405,110 @@ th,td{
 }
 
 
+/* footer  */
 
+footer{
+    background-color: #191919;
+}
 
+.main-div-footer{
+    width: 80%;
+    margin: 0 auto;
+}
+.div1-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.right-div-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    gap: 14px;
+}
+.div1-footer h1{
+    margin: 1.5rem 0;
+    color: var(--text-color);
+}
+.div1-innerdiv-1{
+    width: 60%;
+    padding: 0.5rem 0;
+}
+.div1-innerdiv-1 h1{
+    font-size: 50px;
+    color: var(--button-color);
+}
+.div1-innerdiv-1 p{
+    font-size: 18px;
+    color: var(--paragraph-color);
+    padding-right:3rem ;
+}
+.div1-innerdiv-2 ul a li, .div1-innerdiv-3 ul a li{
+    color: var(--paragraph-color);
+    font-size: 20px;
+    margin: 1rem 0;
+}
+.line{
+    border: 1px solid #2f2f2f;
+    margin: 0.5rem 0;
+}
+.div2-footer{
+    color: var(--paragraph-color);
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem 0;
+}
 
+/* Price */
+.price-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #191919;
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+.header-price{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.card{
+    height: auto;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding:  2rem ;
+    border-radius: 10px;
+}
+.card p{
+    color: white;
+}
+.card span{
+    color: blanchedalmond;
+}
+.card hr{
+    border: 1px solid blanchedalmond;
+    margin: 1rem 0;
+}
 
+.card a button{
+    padding: 1rem 1.5rem;
+    background-color: rgb(32, 31, 31);
+    color: var(--text-color);
+    font-size: medium;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 
-
-
-
+}
 
 
 
@@ -416,7 +519,7 @@ th,td{
 
 @media  (max-width: 576px) { 
 
-    h1, .hero-left>h1 , .Mile-Easily-header>h1, .BMI-Calculator-header h1{
+    h1, .hero-left>h1 , .Mile-Easily-header>h1, .BMI-Calculator-header h1,.card h1{
         font-size: 30px;
     }
     .navbar ,.hero-left , .hero-image-div,
@@ -440,7 +543,7 @@ th,td{
         
     }
     .hero-main-container , .habit-card ,.Extra-Mile-Easily, 
-    .BMI-Calculator-container>div{
+    .BMI-Calculator-container>div , .right-div-footer, .div1-footer,.cards{
         flex-direction: column;
     }
     .nav{
@@ -500,19 +603,24 @@ th,td{
 
     }
     .Mile-Easily-imge-div img{
-        border-radius: 35px;
+        border-radius: 28px;
     }
-    .input-div{
+    .input-div,.div1-innerdiv-1 p {
         padding: 0;
+        text-align: justify;
     }
     .ours-team-members{
         grid-template-columns: repeat(1,1fr);
     }
-    .Extra-Mile-Easily, .team-main-container{
+    .Extra-Mile-Easily, .team-main-container,.price-container{
         width: 90%;
     }
-    .ours-team-members,.ours-team-members div img{
+    .Extra-Mile-Easily{
+        padding: 0.5rem;
+    }
+    .ours-team-members,.div1-innerdiv-1,.right-div-footer,
+    .ours-team-members div img, .header-price{
         width: 100%;
     }
-
+     
 }
