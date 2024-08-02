@@ -146,6 +146,10 @@ header{
     width: 2rem;
     background: var(--button-color);
     border-radius: 50%;
+    
+}
+.circle>i{
+   display: none;
 }
 .card-2-hero{
     position: absolute;
@@ -340,7 +344,7 @@ th,td{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     border: none;
-    color: black;
+    color: gray;
 } 
 .full-input{
     width: 100%;
@@ -348,7 +352,7 @@ th,td{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     border: none;
-    color: black;
+    color: gray;
 } 
 .input-div button{
      padding: 0.8rem 2.5rem;
@@ -519,11 +523,14 @@ footer{
 
 @media  (max-width: 576px) { 
 
-    h1, .hero-left>h1 , .Mile-Easily-header>h1, .BMI-Calculator-header h1,.card h1{
+    h1, .Mile-Easily-header>h1, .BMI-Calculator-header h1,.card h1{
         font-size: 30px;
     }
+    .hero-left>h1{
+        font-size: 48px;
+    }
     .navbar ,.hero-left , .hero-image-div,
-    .hero-main-container,.hero-tow-btn,.card-1,.your-habibt-header,.Mile-Easily-imge-div img,
+    .hero-main-container,.hero-tow-btn,.card-1,.your-habibt-header,
     .Mile-Easily-header, .Mile-Easily-header button,.BMI-Calculator-header,
     .Calculate-BMI, .BMI-Calculator-main, .team-header
     {
@@ -574,7 +581,7 @@ footer{
         text-align: start;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(2px);
-        padding: 1rem;
+        padding: 0.7rem;
         border-radius: 10px;
         color: var(--text-color);
         display: flex;
@@ -583,13 +590,24 @@ footer{
         align-items: center;
         
     }
+
+    .circle{
+        display: flex;
+         justify-content: center;
+       align-items: center;
+    }
+    .circle i{
+       display: block;
+      
+      
+    }
     .card-2-hero{
         position: absolute;
         top: 10%;
         right: 0%;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(2px);
-        padding: 1rem;
+        padding: 0.7rem;
         border-radius: 10px;
         color: var(--text-color);
         
@@ -603,7 +621,7 @@ footer{
 
     }
     .Mile-Easily-imge-div img{
-        border-radius: 28px;
+        border-radius: 10px;
     }
     .input-div,.div1-innerdiv-1 p {
         padding: 0;
@@ -619,7 +637,7 @@ footer{
         padding: 0.5rem;
     }
     .ours-team-members,.div1-innerdiv-1,.right-div-footer,
-    .ours-team-members div img, .header-price{
+    .ours-team-members div img, .header-price,.Mile-Easily-imge-div img{
         width: 100%;
     }
      
