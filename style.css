@@ -128,7 +128,7 @@ header{
 
 .card-1-hero{
     position: absolute;
-    bottom: 15%;
+    bottom: 25%;
     left: 2%;
     text-align: start;
     background: rgba(255, 255, 255, 0.1);
@@ -153,13 +153,17 @@ header{
 }
 .card-2-hero{
     position: absolute;
-    top: 30%;
+    top: 18%;
     right: 10%;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
     padding: 1rem;
     border-radius: 10px;
     color: var(--text-color);
+}
+.card-2-hero >div p,.card-1-hero >div p{
+   font-size: 13px;
+   color: var(--paragraph-color);
 }
 .hero-tow-btn{
     display: flex;
@@ -529,13 +533,17 @@ footer{
     .hero-left>h1{
         font-size: 48px;
     }
+    .card-2-hero >div p,.card-1-hero >div p{
+        font-size: 9px;
+        color: var(--paragraph-color);
+    }
     .navbar ,.hero-left , .hero-image-div,
-    .hero-main-container,.hero-tow-btn,.card-1,.your-habibt-header,
+    .hero-main-container,.card-1,.your-habibt-header,
     .Mile-Easily-header, .Mile-Easily-header button,.BMI-Calculator-header,
     .Calculate-BMI, .BMI-Calculator-main, .team-header
     {
         width: 100%;
-        padding: 1rem 1rem;
+        padding: 1rem 0.5rem;
     }
     .nav-div{
         display: none;
@@ -637,7 +645,7 @@ footer{
         padding: 0.5rem;
     }
     .ours-team-members,.div1-innerdiv-1,.right-div-footer,
-    .ours-team-members div img, .header-price,.Mile-Easily-imge-div img{
+    .ours-team-members div img, .header-price,.Mile-Easily-imge-div img, .hero-tow-btn{
         width: 100%;
     }
      
