@@ -56,6 +56,7 @@ header{
 .nav-items a li{
     color: var(--text-color);
 }
+
 #active{
    background-color: var(--button-color);
    padding: 1rem 2.5rem;
@@ -73,13 +74,14 @@ header{
     display: flex; 
     justify-content: center;
     gap: 10px;
+    
 }
 .hero-left{
     width: 50%;
     margin-top: 3rem;
 }
 .hero-left h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: var(--text-color);
 }
 .hero-left p{
@@ -132,11 +134,11 @@ header{
 
 .card-1-hero{
     position: absolute;
-    bottom: 25%;
-    left: 2%;
+    bottom: 15%;
+    left: 5%;
     text-align: start;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     padding: 1rem;
     border-radius: 10px;
     color: var(--text-color);
@@ -157,10 +159,10 @@ header{
 }
 .card-2-hero{
     position: absolute;
-    top: 18%;
-    right: 10%;
+    top: 25%;
+    right: 7%;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     padding: 1rem;
     border-radius: 10px;
     color: var(--text-color);
@@ -234,14 +236,13 @@ main p{
     justify-content: space-between;
     gap: 2rem;
 }
-.Mile-Easily-imge-div{
 
-}
 .Mile-Easily-imge-div img{
     height: 250px;
     width: 350px;
     border-radius: 15px;
-
+    object-fit: none;
+    object-position: 65% 29%
 }
 
 .Mile-Easily-header {
@@ -309,9 +310,6 @@ th,td{
     padding: 1.5rem 0;
 }
 
-.Calculate-BMI{
-    
-}
 .Calculate-BMI>h1 ,.Calculate-BMI p{
     margin: 1.5rem 0;
 }
@@ -403,13 +401,16 @@ th,td{
 
 .member1,.member2, .member3,
 .member4,.member5,.member6{
-  position: relative;  
+  position: relative; 
+  width: 100%; 
 }
 
 .ours-team-members div img{
    width: 100%;
    height: 100%;
    border-radius: 10px;
+   object-fit: cover;
+   object-position: center;
 }
 .grid-text{
    position: absolute;
@@ -505,6 +506,8 @@ footer{
 
 .card{
     height: auto;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(45deg, rgb(222, 249, 196) 0%, rgb(156, 219, 166) 25%, rgb(80, 180, 152) 75%,rgb(70, 133, 133)   100% );
     color: var(--text-color);
     padding: 1.5rem ;
@@ -539,12 +542,14 @@ footer{
     color: white;
     position: relative;
     z-index:10;
+    margin: 1.5rem 0;
 }
 .card h1,h3,span,hr,a>button{
     z-index:10;
     position: relative;
     
 }
+
 
 .card span{
     color: blanchedalmond;
@@ -563,7 +568,7 @@ footer{
     background:linear-gradient(90deg, #009688 0%, #8BC34A 100%);
     color: var(--text-color);
     font-size: medium;
-    margin: 1rem 0;
+    margin: 2rem 0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -584,11 +589,12 @@ footer{
 
 @media  (max-width: 576px) { 
 
-    h1, .Mile-Easily-header>h1, .BMI-Calculator-header h1,.card h1{
+    h1, .Mile-Easily-header>h1, .BMI-Calculator-header h,.card h1{
         font-size: 30px;
     }
+    
     .hero-left>h1{
-        font-size: 48px;
+        font-size: 55px;
     }
     .card-2-hero >div p,.card-1-hero >div p{
         font-size: 10px;
@@ -710,6 +716,11 @@ footer{
     .ours-team-members,.div1-innerdiv-1,.right-div-footer,
     .ours-team-members div img, .header-price,.Mile-Easily-imge-div img, .hero-tow-btn{
         width: 100%;
+    }
+    .Mile-Easily-imge-div img{
+       
+        object-fit: cover;
+        object-position:center
     }
      
 }
