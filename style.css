@@ -22,7 +22,7 @@ body{
 }
 
 header{
-    background: #232323;
+    background: linear-gradient(0deg,  #000000 , #232323 80%,  #111111 );
 }
 /* navbar */
 .navbar{
@@ -474,7 +474,7 @@ footer{
     padding: 1rem 0;
 }
 
-/* Price */
+/* Price ( uniqe section)*/
 .price-container{
     width: 80%;
     margin: 0 auto;
@@ -597,7 +597,7 @@ footer{
         font-size: 55px;
     }
     .card-2-hero >div p,.card-1-hero >div p{
-        font-size: 10px;
+        font-size: 12px;
         color: var(--paragraph-color);
     }
    .card-2-hero >div h1{
